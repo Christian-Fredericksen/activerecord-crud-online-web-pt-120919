@@ -29,8 +29,8 @@ def can_be_created_in_a_block(args = nil)
   # release_date == 1990
   
   Movie.create do |m|
-    m.string :title
-    m.integer :release_date
+    title = args
+    release_date = args
   end
 end
 
